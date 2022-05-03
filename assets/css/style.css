@@ -205,7 +205,7 @@ body {
 } */
 
 .topmenu>li:not(:nth-child(4)):after {
-  content: url("/assets/image/Polygon\ 3.svg");
+  content: url("../image/Polygon\ 3.svg");
   margin-left: 5px;
 }
 
