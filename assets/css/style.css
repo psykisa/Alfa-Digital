@@ -190,7 +190,6 @@ body {
 }
 
 .topmenu>li {
-  /* display: inline-block;*/
   position: relative;
   list-style-type: none;
   color: #FFFFFF;
@@ -199,14 +198,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 118%;
-  /* margin: 0; */
-  /* margin-right: 162px; */
   padding-bottom: 15px;
 }
-
-/* .topmenu>:last-child {
-  margin-right: 0;
-} */
 
 .topmenu>li:not(:nth-child(4)):after {
   content: url("../image/Polygon\ 3.svg");
@@ -238,7 +231,6 @@ body {
   transition: 0.5s;
   transform: scaleY(1);
   z-index: 5;
-  /* display: block; */
 }
 
 .submenu>li:hover {
@@ -257,6 +249,7 @@ footer {
 
 .basement {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   min-height: 299px;
 }
@@ -273,34 +266,26 @@ footer {
 }
 
 .basement-logo img {
+  width: 284px;
   display: block;
   margin-bottom: 52px;
 }
 
-.navigation-footer {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.navigation-footer ul {
-  display: inline-block;
+.basement ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-right: 194px;
 }
 
-.navigation-footer li:not(:last-child) {
+.basement li:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.navigation-footer li:hover {
+.basement li:hover {
   text-decoration: underline;
   transition: 0.5s;
   transform: scale(1.1);
 }
 
-.navigation-footer a {
+.basement a {
   font-family: "Raleway-Medium", "Arial";
   font-style: normal;
   font-weight: 400;
@@ -308,6 +293,10 @@ footer {
   line-height: 19px;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.social-network-footer{
+  max-width: 240px;
 }
 
 .social-network-footer p {
