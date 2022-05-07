@@ -257,7 +257,8 @@ footer {
 
 .basement-logo {
   min-width: 284px;
-  padding-top: 15px;
+  box-sizing: content-box;
+  padding-top: 10px;
 }
 
 .basement-logo input {
@@ -379,7 +380,6 @@ footer {
     margin: 30px auto;
   }
 
-  
   .head{
     margin-bottom: 0;
   }
@@ -391,6 +391,10 @@ footer {
    .basement{
      flex-direction: column;
     justify-content:center;
+   }
+
+   .basement-logo input{
+     margin-left: 30px;
    }
 
 }
