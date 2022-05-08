@@ -13,6 +13,8 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   overflow: hidden;
 }
@@ -23,7 +25,7 @@ body {
   padding: 0 15px;
 }
 
-.button{
+.button {
   width: 238px;
   height: 64px;
   font-family: "Raleway-Medium", "Arial";
@@ -38,12 +40,12 @@ body {
 /***********HEADER****************/
 
 .header {
-  /* position: absolute; */
-  /* width: 100%; */
+  position: absolute;
   left: 0;
   top: 0;
-  z-index: 2px;
-  margin: 27px auto 200px auto;
+  width: 100%;
+  z-index: 10px;
+  margin-top: 27px;
 }
 
 .head {
@@ -105,7 +107,7 @@ body {
   grid-template-rows: 32px 32px;
   width: 296px;
   height: 64.21px;
-  margin-left:76px;
+  margin-left: 76px;
   padding-top: 3px;
 }
 
@@ -289,7 +291,7 @@ footer {
   transform: scale(1.1);
 }
 
-.basement a{
+.basement a {
   font-family: "Raleway-Medium", "Arial";
   font-style: normal;
   font-weight: 400;
@@ -299,7 +301,7 @@ footer {
   text-decoration: none;
 }
 
-.social-network-footer{
+.social-network-footer {
   width: 240px;
   height: 225px;
   padding-top: 40px;
@@ -326,6 +328,19 @@ footer {
   margin-right: 20px;
 }
 
+/*****MAIN**************************/
+
+.main {
+  flex: 1 1 auto;
+}
+
+.slider{
+  min-width: 1018px;
+  /* background: url(../image/image\ main/im); */
+}
+
+
+
 
 /*****@ MEDIA************************/
 
@@ -338,8 +353,8 @@ footer {
     margin: 10px 25px;
   }
 
-  .topmenu{
-    justify-content:space-evenly;
+  .topmenu {
+    justify-content: space-evenly;
   }
 
 }
@@ -348,30 +363,30 @@ footer {
 
   .logo {
     margin-left: 25px;
-  } 
+  }
 
   .order-layout,
   .contacts {
-    margin-left:20px;
-  } 
+    margin-left: 20px;
+  }
 
   .working-hours {
     padding-left: 15px;
     margin: 10px auto;
-  }  
+  }
 
-  .basement ul{
+  .basement ul {
     padding-left: 10px;
   }
-  
+
 }
 
 @media(max-width:768px) {
 
-  .topmenu li{
+  .topmenu li {
     font-size: 14px;
   }
-  
+
   #layout {
     margin: 15px;
   }
@@ -380,47 +395,47 @@ footer {
     margin: 30px auto;
   }
 
-  .head{
+  .head {
     margin-bottom: 0;
   }
 
   .basement ul {
-    list-style:disc;
+    list-style: disc;
     margin-bottom: 0;
   }
-   .basement{
-     flex-direction: column;
-    justify-content:center;
-   }
 
-   .basement-logo input{
-     margin-left: 30px;
-   }
+  .basement {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .basement-logo input {
+    margin-left: 30px;
+  }
 
 }
 
 @media(max-width: 480px) {
-  .topmenu{
+  .topmenu {
     flex-direction: column;
     margin-top: 0;
     text-align: center;
   }
 
-  .topmenu>li{
+  .topmenu>li {
     border-bottom: 2px solid white;
     padding-top: 15px;
   }
 
-  .submenu{
+  .submenu {
     width: 90%;
-    left:7px;
+    left: 7px;
     text-align: left;
     font-size: 14px;
   }
 
-  .basement ul a{
+  .basement ul a {
     font-size: 14px;
   }
 
 }
-
